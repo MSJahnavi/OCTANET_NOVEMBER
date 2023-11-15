@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>TODO LIST</h2>
+        <h3>Add Item</h3>
+        <p>
+            <input id="new-task" type="text" placeholder="Task">
+            <input id="deadline" type="date" placeholder="Deadline" min="2023-11-15">
+            <input type="checkbox" id="low" name="priority" value="Low">
+            <span>Low</span>
+            <input type="checkbox" id="medium" name="priority" value="Medium">
+            <span>Medium</span>
+            <input type="checkbox" id="high" name="priority" value="High">
+            <span>High</span>
+            <input id="label" type="text" placeholder="Label">
+            <button>Add</button>
+        </p>
+
+        <h3>Todo</h3>
+        <ul id="incomplete-tasks">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+            <!-- Completed tasks will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
